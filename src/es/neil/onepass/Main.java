@@ -1,4 +1,4 @@
-package sample;
+package es.neil.onepass;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
