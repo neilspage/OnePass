@@ -11,8 +11,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("gui.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setTitle("OnePass - Infinite Security.");
+        primaryStage.setScene(new Scene(root, 390, 290));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

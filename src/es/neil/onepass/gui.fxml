@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" prefHeight="300.0" prefWidth="300.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="405.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <AnchorPane prefHeight="65.0" prefWidth="584.0" style="-fx-background-color: #d63031;">
+               <children>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="46.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="ONE" underline="true">
+                     <font>
+                        <Font name="Consolas Bold" size="40.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#eeeded" layoutX="78.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASS">
+                     <font>
+                        <Font name="Consolas" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <TextField layoutX="244.0" layoutY="92.0" />
+            <TextField layoutX="244.0" layoutY="130.0" />
+            <Text layoutX="111.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Website/Service:">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecf0f1" height="184.0" layoutX="31.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
+            <AnchorPane prefHeight="65.0" prefWidth="409.0" style="-fx-background-color: #d63031;">
+               <children>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="46.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="ONE" underline="true">
+                     <font>
+                        <Font name="Consolas Bold" size="40.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#eeeded" layoutX="78.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASS">
+                     <font>
+                        <Font name="Consolas" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <TextField layoutX="192.0" layoutY="88.0" />
+            <Text layoutX="64.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Masterpassword:">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="57.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Website/Service:">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </Text>
+            <PasswordField layoutX="192.0" layoutY="125.0" />
+            <Button layoutX="192.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Show Pass" />
+            <Button layoutX="192.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Copy Pass" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
