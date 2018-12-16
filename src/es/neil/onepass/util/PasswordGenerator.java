@@ -10,7 +10,7 @@ import java.security.SecureRandom;
 
 public class PasswordGenerator {
     public static String computePass(String masterpass, String service) throws Exception {
-        String concatArgs = masterpass+"!--+--!"+service; //concatonate the two arguments, and then MD5 hash them.
+        String concatArgs = masterpass+"!--+--!"+service; //concatonate the two arguments prior to returning an encrypted string.
         return new String(encryptAES(service+service+service+service+service+service+service+service+service+service+service+service+service,concatArgs+concatArgs+concatArgs+concatArgs+concatArgs+concatArgs+concatArgs+concatArgs+concatArgs),"US-ASCII").replaceAll("\\W", "");
     }
 
