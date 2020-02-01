@@ -1,4 +1,6 @@
 # OnePass
+ONLY BEEN TESTED TO WORK ON LINUX AND WINDOWS. DON'T ATTEMPT TO USE IT ON A MAC.
+
 Single password = multiple per site. Highly secure, AES256 encrypted.
 
 # Screenshots
