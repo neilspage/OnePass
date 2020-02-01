@@ -35,7 +35,7 @@ public class Controller implements Initializable {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Password!");
             alert.setHeaderText("Look, here's your pass! Don't memorise it.");
-            alert.setContentText("Just know your master pass & service name, your pass is: " + newPass);
+            alert.setContentText("Just know your master pass & service name, your pass is: \n" + newPass);
 
             alert.showAndWait();
         } catch (Exception e) {

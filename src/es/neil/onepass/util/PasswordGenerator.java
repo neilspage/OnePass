@@ -1,6 +1,7 @@
 package es.neil.onepass.util;
 
 import sun.misc.BASE64Encoder;
+import sun.rmi.runtime.Log;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
@@ -18,7 +19,7 @@ public class PasswordGenerator {
         String password = "";
 
         while (password.length() < desiredPassLength) {
-            password += encryptAES(serviceName, masterPass);
+            password += encryptAES(serviceName, ensureSaltIs16Bits(masterPass));
         }
 
         return password;
@@ -42,31 +43,21 @@ public class PasswordGenerator {
         return bytes;
     }
 
-    static String generateStringOnSeed(String seed)
-    {
-        int stringSize = 16;
-        byte[] array = new byte[256];
-        new Random().nextBytes(array);
-
-        String randomString
-                = new String(array, Charset.forName("UTF-8"));
-
-        StringBuffer r = new StringBuffer();
-
-        for (int k = 0; k < randomString.length(); k++) {
-
-            char ch = randomString.charAt(k);
-
-            if (((ch >= 'a' && ch <= 'z')
-                    || (ch >= 'A' && ch <= 'Z')
-                    || (ch >= '0' && ch <= '9'))
-                    && (stringSize > 0)) {
-
-                r.append(ch);
-                stringSize--;
+    //Generate filler if masterPass (salt) is less than 16 bits.
+    public static String ensureSaltIs16Bits(String salt) {
+        int saltLength = salt.length();
+        if(saltLength < 16){
+            int difference = 16 - salt.length();
+            for(int i = 0; i < difference; i++){
+                salt+="-";
             }
         }
 
-        return r.toString();
+        if(saltLength > 16){
+            int difference = salt.length() - 16;
+            salt = salt.substring(0, saltLength-difference);
+        }
+        System.out.println(salt);
+        return salt;
     }
 }
