@@ -11,4 +11,4 @@ Single password = multiple per site. Highly secure, AES256 encrypted.
 
 <br>
 
-This is made for experimental purposes, quality assurance testing hasn't been thoroughly conducted so it's recommended you don't use this. The following project makes use of JavaFX. If you wish to run it/modify it, be sure to use JavaFX SceneBuilder.
+If you want to modify it, download SceneBuilder.
