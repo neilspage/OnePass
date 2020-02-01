@@ -57,7 +57,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <TextField fx:id="tf1" layoutX="192.0" layoutY="88.0" />
+            <TextField fx:id="textFieldServiceName" layoutX="192.0" layoutY="88.0" />
             <Text layoutX="64.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Masterpassword:">
                <font>
                   <Font name="Consolas" size="14.0" />
@@ -68,9 +68,9 @@
                   <Font name="Consolas" size="14.0" />
                </font>
             </Text>
-            <PasswordField fx:id="pf1" layoutX="192.0" layoutY="125.0" />
-            <Button fx:id="btn1" layoutX="192.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Show Pass" />
-            <Button fx:id="btn2" layoutX="192.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Copy Pass" />
+            <PasswordField fx:id="passwordFieldMasterPass" layoutX="192.0" layoutY="125.0" />
+            <Button fx:id="btnShow" layoutX="192.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Show Pass" />
+            <Button fx:id="btnCopy" layoutX="192.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Copy Pass" />
          </children>
       </AnchorPane>
    </children>
