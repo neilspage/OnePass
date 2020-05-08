@@ -13,4 +13,4 @@ Single password = multiple per site. Highly secure, AES256 encrypted.
 
 <br>
 
-If you want to modify it, download SceneBuilder.
+If you want to modify the GUI use JavaFX SceneBuilder or learn FXML :)
